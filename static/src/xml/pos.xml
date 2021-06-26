@@ -29,6 +29,9 @@
                                 With a <t t-esc="orderline.get_discount()"/>% discount
                             </div>
                         </t>
+                        <t t-if="orderline.note">
+                            <t t-esc="orderline.note"/>
+                        </t>
                     </td>
                     <td class="pos-right-align">
                         <t t-esc="orderline.get_quantity_str_with_unit()"/>
